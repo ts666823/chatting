@@ -1,0 +1,334 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url("https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap");
+
+:root {
+    --color-green: #00C46D;
+    --color-red: #F60F4C;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #bcdee7 url("http://victory-design.ru/sandbox/codepen/profile_card/bg.png") no-repeat center center fixed;
+    /*background: #C5DDEB;*/
+    font: 14px/20px "Lato", Arial, sans-serif;
+    padding: 40px 0;
+    color: white;
+}
+
+.container {
+    margin: 0 auto;
+    width: 800px;
+    background: #444753;
+    border-radius: 5px;
+}
+
+.menu {
+    float: left;
+    height: 100%;
+    width: 50px;
+    background: #4768b5;
+    background: -webkit-linear-gradient(#4768b5, #35488e);
+    background: -o-linear-gradient(#4768b5, #35488e);
+    background: -moz-linear-gradient(#4768b5, #35488e);
+    background: linear-gradient(#4768b5, #35488e);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+}
+
+.menu .items {
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+
+.menu .items .item {
+    height: 70px;
+    border-bottom: 1px solid #6780cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9fb5ef;
+    font-size: 17pt;
+}
+
+.menu .items .item-active {
+    background-color: #5172c3;
+    color: #FFF;
+}
+
+.menu .items .item:hover {
+    cursor: pointer;
+    background-color: #4f6ebd;
+    color: #cfe5ff;
+}
+
+.people-list {
+    width: 260px;
+    float: left;
+}
+
+.people-list .search {
+    padding: 20px;
+}
+
+.people-list input {
+    border-radius: 3px;
+    border: none;
+    padding: 14px;
+    color: white;
+    background: #6A6C75;
+    width: 90%;
+    font-size: 14px;
+}
+
+.people-list .fa-search {
+    position: relative;
+    left: -25px;
+}
+
+.people-list ul {
+    overflow: scroll;
+    padding: 20px;
+    height: 770px;
+}
+
+.people-list ul li {
+    padding-bottom: 20px;
+}
+
+
+.people-list .time {
+    color: gray;
+}
+
+.people-list .button {
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font: inherit;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    transition: all 0.5s ease;
+    width: 80px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.people-list .button.-accept {
+    grid-column: 1;
+    background-color: var(--color-green);
+    color: white;
+}
+
+.people-list .button.-accept.-clicked{
+    grid-column: 1;
+    background-color: gray;
+    color: white;
+}
+
+
+.people-list .button.-refuse {
+    grid-column: 2;
+    background-color: red;
+    color: white;
+}
+
+.people-list .button.-refuse.-clicked{
+    grid-column: 1;
+    background-color: gray;
+    color: white;
+}
+
+.people-list img {
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+.people-list .about {
+    float: left;
+    margin-top: 8px;
+}
+
+.people-list .about {
+    padding-left: 8px;
+}
+
+.people-list .status {
+    color: #92959E;
+}
+
+.friend {
+    width: 490px;
+    float: left;
+    background: #F2F5F8;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #F2F5F8;
+    height: 854px;
+}
+
+
+.friend-list {
+    width: 490px;
+    float: left;
+}
+
+.friend-list .header{
+    display: flex;
+    align-items: center;
+    margin: 10px 10px;
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+.friend-list .header .card-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+.friend-list .header .card-amount {
+    border: 1px solid #000000;
+    margin-left: 8px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.friend-list input {
+    border-radius: 3px;
+    border: none;
+    padding: 14px;
+    color: white;
+    background: #6A6C75;
+    font-size: 14px;
+    width: 450px;
+}
+
+.friend-list .fa-search {
+    position: relative;
+    height: 20px;
+    color: black;
+    padding-left: 10px;
+    border-width: 5px;
+}
+
+.friend-list ul {
+    overflow: scroll;
+    padding: 20px;
+    height: 704px;
+}
+
+.friend-list ul li {
+    padding-bottom: 20px;
+}
+
+.friend-list img {
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+
+.friend-list .about {
+    float: left;
+    margin-top: 8px;
+}
+
+.friend-list .about {
+    padding-left: 8px;
+}
+
+.friend-list .about .name{
+    color:black;
+}
+
+
+.friend-list .status {
+    color: #92959E;
+}
+
+.friend-list .button {
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font: inherit;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    grid-row: 1;
+    transition: all 0.5s ease;
+    width: 80px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.friend-list .button.-add {
+    grid-column: 1;
+    background-color: var(--color-green);
+    color: white;
+}
+
+.friend-list .button.-add.-clicked{
+    grid-column: 1;
+    background-color: gray;
+    color: white;
+}
+
+
+
+.online,
+.offline,
+.me {
+    margin-right: 3px;
+    font-size: 10px;
+}
+
+.online {
+    color: #86BB71;
+}
+
+.offline {
+    color: #E38968;
+}
+
+.me {
+    color: #94C2ED;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.float-right {
+    float: right;
+}
+
+.people-list .list .clearfix .active,
+.people-list .list .clearfix:hover {
+    margin-top: -1px;
+    margin-left: -1px;
+    padding-top: 13px;
+    border: 0;
+    width: calc(100% + 2px);
+    padding-left: calc(10% + 1px);
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
